@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BsPersonCircle } from 'react-icons/bs';  // Import an icon
 
 export default function Home() {
   const [user, setUser] = useState<{ username: string; role: string } | null>(null);
@@ -50,9 +49,8 @@ export default function Home() {
           </div>
         </div>
       ) : (
-        <div className="text-center mt-5">
-          <BsPersonCircle size={100} color="#6c757d" /> {/* User icon */}
-          <p className="mt-3 mb-4 text-muted">You are not logged in.</p>
+        <div className="text-center">
+          <p className="mb-3">You are not logged in.</p>
           <button className="btn btn-primary" onClick={() => router.push('/login')}>
             Login
           </button>

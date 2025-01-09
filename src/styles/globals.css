@@ -40,3 +40,61 @@ a {
     color-scheme: dark;
   }
 }
+
+
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+}
+
+.sidebar h2 {
+  text-align: center;
+  color: #ecf0f1;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  margin-left: 250px;
+  width: 100%;
+  padding: 20px;
+}
+
+.header {
+  background-color: #34495e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 80vh;
+}
