@@ -36,6 +36,7 @@ const nextConfig = {
       },
     ];
     
+    
   },
   headers: async () => [
     {
