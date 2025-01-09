@@ -35,6 +35,7 @@ const nextConfig = {
         destination: 'https://backend.example.com/:path*', // Proxy API requests to backend
       },
     ];
+    
   },
   headers: async () => [
     {
