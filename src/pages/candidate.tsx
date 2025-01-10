@@ -4,7 +4,6 @@ import { Candidate } from '@/interfaces/candidates';
 import Layout from '@/components/Layout';
 
 
-// Dummy Data
 const candidates: Candidate[] = [
   { id: 1, name: 'John Doe', position: 'Software Engineer', status: 'Pending' },
   { id: 2, name: 'Jane Smith', position: 'Product Manager', status: 'Accepted' },
@@ -12,7 +11,7 @@ const candidates: Candidate[] = [
   { id: 4, name: 'Alice Johnson', position: 'HR', status: 'Pending' },
 ];
 
-// Card Component for displaying candidate details
+
 interface CandidateCardProps {
   candidate: Candidate;
 }
@@ -29,7 +28,7 @@ const CandidateCard: React.FC<CandidateCardProps> = ({ candidate }) => {
   );
 };
 
-// Main Candidate Portal Component
+
 const CandidatePortal: React.FC = () => {
   return (
     <div className="container">

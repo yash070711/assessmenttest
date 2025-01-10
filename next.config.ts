@@ -44,7 +44,7 @@ const nextConfig = {
       headers: [
         {
           key: 'X-Frame-Options',
-          value: 'SAMEORIGIN', // Adds security headers
+          value: 'SAMEORIGIN', 
         },
         {
           key: 'X-Content-Type-Options',
